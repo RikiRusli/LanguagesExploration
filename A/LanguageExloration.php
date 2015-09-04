@@ -58,6 +58,36 @@
 				}
 				
 			}
+			
+			class LanguagesExploration{
+				
+				public static function main(){
+					// 14. Cara menginstansiasi kelas baru
+					$publicClass = new PublicClass{);
+					
+					// 15. Cara memanggil method dengan parameter
+					$publicClass->set_private_int(13);
+					
+					// 16. Cara memanggil method dan mendapatkan return value-nya
+					echo "[13] publicClass.getPrivateInt() = " . $publicClass->get_private_int();
+					
+					// 17. Cara mengubah isi atribut publik dari luar kelas
+					$publicClass->$publicString = "World!";
+					
+					// 18. Cara mendapatkan isi atribut publik dari luar kelas
+					echo "[World!] publicClass.publicString = " . $publicClass->$publicString;
+					
+					// 19. Cara mengisi nilai atribut statik
+					$publicClass->$static_int = 10;
+					
+					// 20. Cara mendapatkan nilai atribut statik
+					echo "[10] PublicClass.staticInt = " . $publicClass->$static_int;
+					
+					
+				
+				
+				}
+			}
 		
 		?>
 	
